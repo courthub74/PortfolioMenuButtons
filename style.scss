@@ -1,0 +1,124 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@900&display=swap');
+// COLORS
+$mainblue: #080E2F;
+$skillswhite: #FFFFFF;
+$aboutgreen: #0E4946;
+$skillsteal: #146166;
+$iconblock: #023430;
+$languagewhite: #d9e2e2;
+$techcirclegreen: #05607D;
+$hoverfonts: #B7BCD6;
+$experiencegreen: #255C5A;
+
+// BUTTON COLORS
+$learnmorebutton: #EBEBEB;
+$experiencegreenbutton: #476D6B;
+
+// DISPLAY SQAURES COLORS
+$portfolios: #36395D;
+$experiences: #496b69;
+$experiencestwo: #476D6B;
+
+// BOX SHADOW
+$boxshadowcircles: rgba(0, 0, 0, 0.521);
+
+// FOOTER
+$firstblue: #58a6ff;
+$secondblue: #6287cf;
+$thirdblue: rgb(85, 85, 255);
+$smallsgrey: #757782;
+
+// SOCIALS
+$socialsgrey: #B7BCD6;
+
+// MOBILE VERSIONS
+
+// Main Mobile Version (0px to 500px)
+@media screen and (min-width: 376px) and (max-width: 500px) {
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        body {
+           #mobilecontainer {
+              #mobilemain {
+                background-color: $mainblue;
+                color: white;
+                height: 100vh;
+                .tophomemobile {
+                    display: flex;
+                    .contactbutton {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid $portfolios;
+                        border-radius: 30px;
+                        background-color: $portfolios;
+                        width: 30vw;
+                        height: 5vh;
+                        margin: 4vh 0 0 6vw;
+                        a {
+                            text-decoration: none;
+                            font-family: 'Inter', sans-serif;
+                            color: $skillswhite;
+                            font-size: 4vw;
+                        }
+                    }
+                    .logomobile {
+                        margin: 2vh 0 0 5vw;
+                        img {
+                            width: 20vw;
+                            height: 20vw;
+                        }
+                    }
+                    .hamburgermobileoutline {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid $portfolios;
+                        border-radius: 30px;
+                        background-color: $portfolios;
+                        width: 30vw;
+                        height: 5vh;
+                        margin: 4vh 0 0 5vw;
+                        .hamburgermobile {
+                            // background-color: white;
+                            position: relative;
+                            display: block;
+                            width: 60px;
+                            height: 60px;
+                            cursor: pointer;
+                            appearance: none;
+                            background: none;
+                            outline: none;
+                            border: none;
+                            z-index: 100;
+                        }
+                        .hamburgermobile:after, .hamburgermobile::before {
+                            content: '';
+                            display: block;
+                            background-color: white;
+                            width: 8vw;
+                            height: .55vh;
+                            // margin: .4vh 0;
+                            margin: .4vh 0 0 2vw;
+                            border-radius: 15px;
+                            transition: 0.4s;
+                        }
+                        .barmobile {
+                            content: '';
+                            display: block;
+                            background-color: white;
+                            width: 8vw;
+                            height: .5vh;
+                            margin: .4vh 0 0 2vw;
+                            border-radius: 15px;
+                        }
+                    }
+                }                  
+              } 
+           } 
+        }
+    }
+}
