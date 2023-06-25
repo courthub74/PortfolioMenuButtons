@@ -94,6 +94,7 @@ $socialsgrey: #B7BCD6;
                             outline: none;
                             border: none;
                             z-index: 100;
+                            margin: -.5vh 0 0 0;
                         }
                         .hamburgermobile:after, .hamburgermobile::before {
                             content: '';
@@ -105,6 +106,17 @@ $socialsgrey: #B7BCD6;
                             margin: .4vh 0 0 2vw;
                             border-radius: 15px;
                             transition: 0.4s;
+                        }
+                        // Hamburger clicked
+                        // Makes them X
+                        .hamburgermobile.is-active:before {
+                            transform: rotate(-45deg) translate(1px, 7px);
+                        }
+                        .hamburgermobile.is-active:after {
+                            transform: rotate(45deg) translate(-5px, -11px);
+                        }
+                        .hamburgermobile.is-active .barmobile {
+                            opacity: 0;
                         }
                         .barmobile {
                             content: '';
