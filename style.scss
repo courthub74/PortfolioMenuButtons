@@ -86,15 +86,15 @@ $socialsgrey: #B7BCD6;
                             // background-color: white;
                             position: relative;
                             display: block;
-                            width: 60px;
-                            height: 60px;
+                            width: 65px;
+                            height: 65px;
                             cursor: pointer;
                             appearance: none;
                             background: none;
                             outline: none;
                             border: none;
                             z-index: 100;
-                            margin: -.5vh 0 0 0;
+                            margin: -.8vh 0 0 0;
                         }
                         .hamburgermobile:after, .hamburgermobile::before {
                             content: '';
@@ -128,7 +128,8 @@ $socialsgrey: #B7BCD6;
                             border-radius: 15px;
                         }
                     }
-                }                  
+                }
+                // START HERE ON THE BOTTOM OF THE HOME PAGE
               } 
            } 
         }

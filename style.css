@@ -51,8 +51,8 @@
   * body #mobilecontainer #mobilemain .tophomemobile .hamburgermobileoutline .hamburgermobile {
     position: relative;
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     cursor: pointer;
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -61,7 +61,7 @@
     outline: none;
     border: none;
     z-index: 100;
-    margin: -0.5vh 0 0 0;
+    margin: -0.8vh 0 0 0;
   }
   * body #mobilecontainer #mobilemain .tophomemobile .hamburgermobileoutline .hamburgermobile:after, * body #mobilecontainer #mobilemain .tophomemobile .hamburgermobileoutline .hamburgermobile::before {
     content: "";

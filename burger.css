@@ -1,0 +1,47 @@
+* .container {
+  background-color: rgb(4, 83, 83);
+  height: 100vh;
+}
+* .container .hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+* .container .hamburger .button {
+  background-color: rgb(3, 3, 94);
+  border: none;
+  width: 20vw;
+  height: 5vw;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .container .hamburger .button .menuburger {
+  position: relative;
+  width: 4vw;
+  height: 4vw;
+}
+* .container .hamburger .button .menuburger.is-gone {
+  opacity: 0;
+  transition: 0.5s;
+}
+* .container .hamburger .button .closetext {
+  position: absolute;
+  color: white;
+  font-size: 3vw;
+  opacity: 0;
+}
+* .container .hamburger .button .closetext.is-shown {
+  opacity: 1;
+  color: white;
+  font-size: 3vw;
+  transition: 0.3s;
+}
+* .container .hamburger .button.is-active {
+  color: white;
+  font-size: 3vw;
+  transition: 0.3s;
+}/*# sourceMappingURL=burger.css.map */
